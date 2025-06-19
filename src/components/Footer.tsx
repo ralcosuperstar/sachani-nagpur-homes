@@ -14,7 +14,7 @@ const Footer = () => {
               25+ years of legacy in delivering quality real estate solutions in Nagpur.
             </p>
             <div className="flex space-x-4">
-              <a href="tel:7300230028" className="bg-blue-600 text-white px-4 py-2 rounded-lg hover:bg-blue-700 transition-colors duration-200 flex items-center gap-2">
+              <a href="tel:7300230028" className="bg-[#684a47] text-white px-4 py-2 rounded-lg hover:bg-[#5a3e3b] transition-colors duration-200 flex items-center gap-2">
                 <Phone size={16} />
                 Call Now
               </a>
@@ -47,17 +47,17 @@ const Footer = () => {
             <h4 className="text-lg font-semibold mb-4">Contact Info</h4>
             <div className="space-y-3">
               <div className="flex items-start gap-3">
-                <MapPin size={16} className="mt-1 text-blue-400" />
+                <MapPin size={16} className="mt-1 text-[#684a47]" />
                 <p className="text-gray-300 text-sm">
                   Shop no.18 & 19, Upper Lobby floor, J.B. Wing, NMC Complex, Mangalwari Bazar road, Sadar, Nagpur- 440001
                 </p>
               </div>
               <div className="flex items-center gap-3">
-                <Phone size={16} className="text-blue-400" />
+                <Phone size={16} className="text-[#684a47]" />
                 <a href="tel:7300230028" className="text-gray-300 hover:text-white">7300230028</a>
               </div>
               <div className="flex items-center gap-3">
-                <Mail size={16} className="text-blue-400" />
+                <Mail size={16} className="text-[#684a47]" />
                 <a href="mailto:abcxyz@gmail.com" className="text-gray-300 hover:text-white">abcxyz@gmail.com</a>
               </div>
             </div>

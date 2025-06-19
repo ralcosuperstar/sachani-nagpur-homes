@@ -1,4 +1,3 @@
-
 import React from 'react';
 import Navigation from '../components/Navigation';
 import Footer from '../components/Footer';
@@ -11,14 +10,14 @@ const Index = () => {
       <Navigation />
       
       {/* Hero Section */}
-      <section className="relative pt-16 bg-gradient-to-br from-blue-50 via-white to-blue-50 overflow-hidden">
-        <div className="absolute inset-0 bg-gradient-to-r from-blue-600/5 to-transparent"></div>
+      <section className="relative pt-16 bg-gradient-to-br from-orange-50 via-white to-orange-50 overflow-hidden">
+        <div className="absolute inset-0 bg-gradient-to-r from-[#684a47]/5 to-transparent"></div>
         <div className="relative max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-20">
           <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
             <div className="animate-fade-in">
               <h1 className="text-5xl lg:text-6xl font-bold text-gray-900 mb-6 leading-tight">
                 Welcome to
-                <span className="block text-blue-600">Sachani Group</span>
+                <span className="block text-[#684a47]">Sachani Group</span>
               </h1>
               <p className="text-xl text-gray-600 mb-8 leading-relaxed">
                 A family name built on trust, quality, and excellence in real estate development across Nagpur. 
@@ -28,14 +27,14 @@ const Index = () => {
               <div className="flex flex-col sm:flex-row gap-4">
                 <a 
                   href="tel:7300230028" 
-                  className="bg-blue-600 text-white px-8 py-4 rounded-lg hover:bg-blue-700 transition-all duration-300 flex items-center justify-center gap-3 text-lg font-semibold hover:scale-105"
+                  className="bg-[#684a47] text-white px-8 py-4 rounded-lg hover:bg-[#5a3e3b] transition-all duration-300 flex items-center justify-center gap-3 text-lg font-semibold hover:scale-105"
                 >
                   <Phone size={20} />
                   Call Now for Site Visit
                 </a>
                 <Link 
                   to="/projects" 
-                  className="border-2 border-blue-600 text-blue-600 px-8 py-4 rounded-lg hover:bg-blue-600 hover:text-white transition-all duration-300 text-center text-lg font-semibold"
+                  className="border-2 border-[#684a47] text-[#684a47] px-8 py-4 rounded-lg hover:bg-[#684a47] hover:text-white transition-all duration-300 text-center text-lg font-semibold"
                 >
                   View Projects
                 </Link>
@@ -43,19 +42,19 @@ const Index = () => {
             </div>
             
             <div className="relative animate-scale-in">
-              <div className="bg-white rounded-2xl shadow-2xl p-8 border border-blue-100">
+              <div className="bg-white rounded-2xl shadow-2xl p-8 border border-orange-100">
                 <img 
                   src="https://images.unsplash.com/photo-1524230572899-a752b3835840?auto=format&fit=crop&w=800&q=80"
                   alt="Modern Building"
                   className="w-full h-80 object-cover rounded-xl mb-6"
                 />
                 <div className="grid grid-cols-2 gap-4 text-center">
-                  <div className="bg-blue-50 p-4 rounded-lg">
-                    <h3 className="text-2xl font-bold text-blue-600">25+</h3>
+                  <div className="bg-orange-50 p-4 rounded-lg">
+                    <h3 className="text-2xl font-bold text-[#684a47]">25+</h3>
                     <p className="text-gray-600">Years Legacy</p>
                   </div>
-                  <div className="bg-blue-50 p-4 rounded-lg">
-                    <h3 className="text-2xl font-bold text-blue-600">1,500+</h3>
+                  <div className="bg-orange-50 p-4 rounded-lg">
+                    <h3 className="text-2xl font-bold text-[#684a47]">1,500+</h3>
                     <p className="text-gray-600">Happy Families</p>
                   </div>
                 </div>
@@ -66,7 +65,7 @@ const Index = () => {
       </section>
 
       {/* Stats Section */}
-      <section className="py-16 bg-blue-600">
+      <section className="py-16 bg-[#684a47]">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="grid grid-cols-1 md:grid-cols-4 gap-8 text-center text-white">
             <div className="animate-fade-in">
@@ -74,28 +73,28 @@ const Index = () => {
                 <Building size={40} />
               </div>
               <h3 className="text-3xl font-bold mb-2">16+ Lakh</h3>
-              <p className="text-blue-100">Sq.ft. Developed</p>
+              <p className="text-orange-100">Sq.ft. Developed</p>
             </div>
             <div className="animate-fade-in">
               <div className="flex justify-center mb-4">
                 <Users size={40} />
               </div>
               <h3 className="text-3xl font-bold mb-2">1,100+</h3>
-              <p className="text-blue-100">Homes Delivered</p>
+              <p className="text-orange-100">Homes Delivered</p>
             </div>
             <div className="animate-fade-in">
               <div className="flex justify-center mb-4">
                 <Award size={40} />
               </div>
               <h3 className="text-3xl font-bold mb-2">400+</h3>
-              <p className="text-blue-100">Commercial Clients</p>
+              <p className="text-orange-100">Commercial Clients</p>
             </div>
             <div className="animate-fade-in">
               <div className="flex justify-center mb-4">
                 <Clock size={40} />
               </div>
               <h3 className="text-3xl font-bold mb-2">100%</h3>
-              <p className="text-blue-100">On-Time Delivery</p>
+              <p className="text-orange-100">On-Time Delivery</p>
             </div>
           </div>
         </div>
@@ -121,8 +120,8 @@ const Index = () => {
               { icon: Phone, title: "End-to-End Solutions", desc: "Complete real estate services under one roof" }
             ].map((feature, index) => (
               <div key={index} className="bg-white p-8 rounded-xl shadow-lg hover:shadow-xl transition-all duration-300 hover:scale-105">
-                <div className="flex items-center justify-center w-16 h-16 bg-blue-100 rounded-full mb-6 mx-auto">
-                  <feature.icon className="text-blue-600" size={24} />
+                <div className="flex items-center justify-center w-16 h-16 bg-orange-100 rounded-full mb-6 mx-auto">
+                  <feature.icon className="text-[#684a47]" size={24} />
                 </div>
                 <h3 className="text-xl font-semibold text-gray-900 mb-3 text-center">{feature.title}</h3>
                 <p className="text-gray-600 text-center">{feature.desc}</p>
@@ -143,7 +142,7 @@ const Index = () => {
           <div className="bg-white rounded-2xl shadow-2xl overflow-hidden">
             <div className="grid grid-cols-1 lg:grid-cols-2">
               <div className="p-12">
-                <div className="bg-blue-100 text-blue-800 px-3 py-1 rounded-full text-sm font-semibold mb-4 inline-block">
+                <div className="bg-orange-100 text-[#684a47] px-3 py-1 rounded-full text-sm font-semibold mb-4 inline-block">
                   RERA No. P50500049710
                 </div>
                 <h3 className="text-3xl font-bold text-gray-900 mb-4">Hitesh Imperial</h3>
@@ -165,7 +164,7 @@ const Index = () => {
                 
                 <Link 
                   to="/projects" 
-                  className="bg-blue-600 text-white px-6 py-3 rounded-lg hover:bg-blue-700 transition-colors duration-200 inline-block"
+                  className="bg-[#684a47] text-white px-6 py-3 rounded-lg hover:bg-[#5a3e3b] transition-colors duration-200 inline-block"
                 >
                   View Details
                 </Link>
@@ -184,24 +183,24 @@ const Index = () => {
       </section>
 
       {/* CTA Section */}
-      <section className="py-20 bg-gradient-to-r from-blue-600 to-blue-700">
+      <section className="py-20 bg-gradient-to-r from-[#684a47] to-[#5a3e3b]">
         <div className="max-w-4xl mx-auto text-center px-4 sm:px-6 lg:px-8">
           <h2 className="text-4xl font-bold text-white mb-6">
             Ready to Find Your Dream Home?
           </h2>
-          <p className="text-xl text-blue-100 mb-8">
+          <p className="text-xl text-orange-100 mb-8">
             Join 1,500+ families who trust Sachani Group for their real estate needs.
           </p>
           <div className="flex flex-col sm:flex-row gap-4 justify-center">
             <a 
               href="tel:7300230028" 
-              className="bg-white text-blue-600 px-8 py-4 rounded-lg hover:bg-gray-100 transition-colors duration-200 font-semibold text-lg"
+              className="bg-white text-[#684a47] px-8 py-4 rounded-lg hover:bg-gray-100 transition-colors duration-200 font-semibold text-lg"
             >
               Schedule Site Visit
             </a>
             <Link 
               to="/contact" 
-              className="border-2 border-white text-white px-8 py-4 rounded-lg hover:bg-white hover:text-blue-600 transition-all duration-200 font-semibold text-lg"
+              className="border-2 border-white text-white px-8 py-4 rounded-lg hover:bg-white hover:text-[#684a47] transition-all duration-200 font-semibold text-lg"
             >
               Get In Touch
             </Link>
