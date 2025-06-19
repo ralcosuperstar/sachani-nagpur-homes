@@ -87,11 +87,11 @@ const Blogs = () => {
       <Navigation />
       
       {/* Hero Section */}
-      <section className="pt-16 bg-gradient-to-br from-blue-50 to-white">
-        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-20">
+      <section className="pt-16 bg-gradient-to-br from-orange-50 to-white">
+        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-12 sm:py-16 lg:py-20">
           <div className="text-center">
-            <h1 className="text-5xl font-bold text-gray-900 mb-6">Real Estate Insights</h1>
-            <p className="text-xl text-gray-600 max-w-3xl mx-auto">
+            <h1 className="text-3xl sm:text-4xl lg:text-5xl font-bold text-gray-900 mb-4 sm:mb-6">Real Estate Insights</h1>
+            <p className="text-lg sm:text-xl text-gray-600 max-w-3xl mx-auto px-4">
               Expert advice and insights for home buyers in Nagpur. Learn from our 25+ years of experience 
               in real estate development and help make informed decisions.
             </p>
@@ -100,16 +100,16 @@ const Blogs = () => {
       </section>
 
       {/* Category Filter */}
-      <section className="py-8 bg-white border-b">
+      <section className="py-6 sm:py-8 bg-white border-b">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-          <div className="flex flex-wrap justify-center gap-4">
+          <div className="flex flex-wrap justify-center gap-2 sm:gap-4">
             {categories.map((category) => (
               <button
                 key={category}
                 onClick={() => setSelectedCategory(category)}
-                className={`px-6 py-2 rounded-full font-medium transition-all duration-200 ${
+                className={`px-3 sm:px-6 py-2 rounded-full font-medium transition-all duration-200 text-sm sm:text-base whitespace-nowrap ${
                   selectedCategory === category
-                    ? 'bg-blue-600 text-white'
+                    ? 'bg-[#684a47] text-white'
                     : 'bg-gray-100 text-gray-700 hover:bg-gray-200'
                 }`}
               >
@@ -122,7 +122,7 @@ const Blogs = () => {
 
       {/* Featured Blog Post */}
       {filteredPosts.length > 0 && (
-        <section className="py-20">
+        <section className="py-12 sm:py-16 lg:py-20">
           <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
             <div className="bg-white rounded-2xl shadow-xl overflow-hidden">
               <div className="grid grid-cols-1 lg:grid-cols-2">
@@ -130,25 +130,25 @@ const Blogs = () => {
                   <img 
                     src={filteredPosts[0].image}
                     alt={filteredPosts[0].title}
-                    className="w-full h-96 lg:h-full object-cover"
+                    className="w-full h-64 sm:h-80 lg:h-full object-cover"
                   />
-                  <div className="absolute top-4 left-4 bg-blue-600 text-white px-3 py-1 rounded-full text-sm font-semibold">
+                  <div className="absolute top-4 left-4 bg-[#684a47] text-white px-3 py-1 rounded-full text-sm font-semibold">
                     Featured
                   </div>
                 </div>
                 
-                <div className="p-8 lg:p-12">
-                  <div className="flex items-center gap-4 mb-4">
-                    <span className="bg-blue-100 text-blue-800 px-3 py-1 rounded-full text-sm font-semibold">
+                <div className="p-6 sm:p-8 lg:p-12">
+                  <div className="flex flex-wrap items-center gap-4 mb-4">
+                    <span className="bg-[#684a47]/10 text-[#684a47] px-3 py-1 rounded-full text-sm font-semibold">
                       {filteredPosts[0].category}
                     </span>
                     <span className="text-gray-500 text-sm">{filteredPosts[0].readTime}</span>
                   </div>
                   
-                  <h2 className="text-3xl font-bold text-gray-900 mb-4">{filteredPosts[0].title}</h2>
+                  <h2 className="text-2xl sm:text-3xl font-bold text-gray-900 mb-4">{filteredPosts[0].title}</h2>
                   <p className="text-gray-600 mb-6 leading-relaxed">{filteredPosts[0].excerpt}</p>
                   
-                  <div className="flex items-center justify-between">
+                  <div className="flex flex-col sm:flex-row items-start sm:items-center justify-between gap-4">
                     <div className="flex items-center gap-4">
                       <div className="flex items-center gap-2 text-gray-500">
                         <User size={16} />
@@ -162,7 +162,7 @@ const Blogs = () => {
                     
                     <Link 
                       to={`/blog/${filteredPosts[0].id}`}
-                      className="bg-blue-600 text-white px-6 py-3 rounded-lg hover:bg-blue-700 transition-colors duration-200 flex items-center gap-2"
+                      className="bg-[#684a47] text-white px-6 py-3 rounded-lg hover:bg-[#5a3e3b] transition-colors duration-200 flex items-center gap-2 w-full sm:w-auto justify-center"
                     >
                       Read More
                       <ArrowRight size={16} />
@@ -176,14 +176,14 @@ const Blogs = () => {
       )}
 
       {/* Blog Posts Grid */}
-      <section className="py-20 bg-gray-50">
+      <section className="py-12 sm:py-16 lg:py-20 bg-gray-50">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-          <div className="text-center mb-16">
-            <h2 className="text-4xl font-bold text-gray-900 mb-4">Latest Articles</h2>
-            <p className="text-xl text-gray-600">Stay updated with the latest trends and tips in real estate</p>
+          <div className="text-center mb-12 sm:mb-16">
+            <h2 className="text-2xl sm:text-3xl lg:text-4xl font-bold text-gray-900 mb-4">Latest Articles</h2>
+            <p className="text-lg sm:text-xl text-gray-600">Stay updated with the latest trends and tips in real estate</p>
           </div>
           
-          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+          <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6 sm:gap-8">
             {filteredPosts.slice(1).map((post) => (
               <article key={post.id} className="bg-white rounded-xl shadow-lg overflow-hidden hover:shadow-xl transition-all duration-300 group">
                 <div className="relative">
@@ -193,21 +193,21 @@ const Blogs = () => {
                     className="w-full h-48 object-cover group-hover:scale-105 transition-transform duration-300"
                   />
                   <div className="absolute top-4 left-4 bg-white/90 backdrop-blur-sm px-3 py-1 rounded-full">
-                    <span className="text-blue-600 text-xs font-semibold">{post.category}</span>
+                    <span className="text-[#684a47] text-xs font-semibold">{post.category}</span>
                   </div>
                 </div>
                 
-                <div className="p-6">
+                <div className="p-4 sm:p-6">
                   <div className="flex items-center gap-4 mb-3">
                     <span className="text-gray-500 text-sm">{post.readTime}</span>
                     <span className="text-gray-300">•</span>
                     <span className="text-gray-500 text-sm">{new Date(post.date).toLocaleDateString()}</span>
                   </div>
                   
-                  <h3 className="text-xl font-bold text-gray-900 mb-3 line-clamp-2 group-hover:text-blue-600 transition-colors">
+                  <h3 className="text-lg sm:text-xl font-bold text-gray-900 mb-3 line-clamp-2 group-hover:text-[#684a47] transition-colors">
                     {post.title}
                   </h3>
-                  <p className="text-gray-600 mb-4 line-clamp-3">{post.excerpt}</p>
+                  <p className="text-gray-600 mb-4 line-clamp-3 text-sm sm:text-base">{post.excerpt}</p>
                   
                   <div className="flex items-center justify-between">
                     <div className="flex items-center gap-2 text-gray-500">
@@ -217,7 +217,7 @@ const Blogs = () => {
                     
                     <Link 
                       to={`/blog/${post.id}`}
-                      className="text-blue-600 hover:text-blue-700 font-medium text-sm flex items-center gap-1 group-hover:gap-2 transition-all"
+                      className="text-[#684a47] hover:text-[#5a3e3b] font-medium text-sm flex items-center gap-1 group-hover:gap-2 transition-all"
                     >
                       Read More
                       <ArrowRight size={14} />
@@ -231,25 +231,25 @@ const Blogs = () => {
       </section>
 
       {/* Newsletter Section */}
-      <section className="py-20">
+      <section className="py-12 sm:py-16 lg:py-20">
         <div className="max-w-4xl mx-auto text-center px-4 sm:px-6 lg:px-8">
-          <div className="bg-gradient-to-br from-blue-50 to-blue-100 rounded-2xl p-12">
-            <div className="inline-flex items-center justify-center w-16 h-16 bg-blue-600 rounded-full mb-6">
+          <div className="bg-gradient-to-br from-orange-50 to-orange-100 rounded-2xl p-8 sm:p-12">
+            <div className="inline-flex items-center justify-center w-16 h-16 bg-[#684a47] rounded-full mb-6">
               <BookOpen className="text-white" size={24} />
             </div>
-            <h2 className="text-3xl font-bold text-gray-900 mb-4">
+            <h2 className="text-2xl sm:text-3xl font-bold text-gray-900 mb-4">
               Stay Updated with Real Estate Insights
             </h2>
-            <p className="text-xl text-gray-600 mb-8">
+            <p className="text-lg sm:text-xl text-gray-600 mb-6 sm:mb-8">
               Get expert tips, market updates, and exclusive insights delivered to your inbox.
             </p>
             <div className="flex flex-col sm:flex-row gap-4 max-w-md mx-auto">
               <input
                 type="email"
                 placeholder="Enter your email"
-                className="flex-1 px-4 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-blue-500 focus:border-transparent"
+                className="flex-1 px-4 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-[#684a47] focus:border-transparent"
               />
-              <button className="bg-blue-600 text-white px-6 py-3 rounded-lg hover:bg-blue-700 transition-colors duration-200 font-semibold">
+              <button className="bg-[#684a47] text-white px-6 py-3 rounded-lg hover:bg-[#5a3e3b] transition-colors duration-200 font-semibold whitespace-nowrap">
                 Subscribe
               </button>
             </div>
