@@ -1,22 +1,14 @@
-
 import React, { useState } from 'react';
 import { Link } from 'react-router-dom';
 import { Menu, X, Phone } from 'lucide-react';
-
 const Navigation = () => {
   const [isOpen, setIsOpen] = useState(false);
-
-  return (
-    <nav className="bg-white shadow-lg fixed w-full top-0 z-50">
+  return <nav className="bg-white shadow-lg fixed w-full top-0 z-50">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="flex justify-between h-16">
           <div className="flex items-center">
             <Link to="/" className="flex-shrink-0 flex items-center">
-              <img 
-                src="/lovable-uploads/afa2fdd2-2c84-4c20-9b48-e7073ecdb910.png" 
-                alt="Sachani Group" 
-                className="h-12 w-auto"
-              />
+              <img src="/lovable-uploads/afa2fdd2-2c84-4c20-9b48-e7073ecdb910.png" alt="Sachani Group" className="h-16 w-auto" />
             </Link>
           </div>
           
@@ -36,18 +28,14 @@ const Navigation = () => {
 
           {/* Mobile menu button */}
           <div className="md:hidden flex items-center">
-            <button
-              onClick={() => setIsOpen(!isOpen)}
-              className="text-gray-700 hover:text-[#684a47]"
-            >
+            <button onClick={() => setIsOpen(!isOpen)} className="text-gray-700 hover:text-[#684a47]">
               {isOpen ? <X size={24} /> : <Menu size={24} />}
             </button>
           </div>
         </div>
 
         {/* Mobile Menu */}
-        {isOpen && (
-          <div className="md:hidden">
+        {isOpen && <div className="md:hidden">
             <div className="px-2 pt-2 pb-3 space-y-1 sm:px-3 bg-white border-t">
               <Link to="/" className="block px-3 py-2 text-gray-700 hover:text-[#684a47]">Home</Link>
               <Link to="/about" className="block px-3 py-2 text-gray-700 hover:text-[#684a47]">About</Link>
@@ -59,11 +47,8 @@ const Navigation = () => {
                 Call Now
               </a>
             </div>
-          </div>
-        )}
+          </div>}
       </div>
-    </nav>
-  );
+    </nav>;
 };
-
 export default Navigation;
