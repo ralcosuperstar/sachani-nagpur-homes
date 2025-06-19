@@ -65,7 +65,7 @@ const Gallery = () => {
       <Navigation />
       
       {/* Hero Section */}
-      <section className="pt-16 bg-gradient-to-br from-blue-50 to-white">
+      <section className="pt-16 bg-gradient-to-br from-orange-50 to-white">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-20">
           <div className="text-center">
             <h1 className="text-5xl font-bold text-gray-900 mb-6">Gallery</h1>
@@ -91,7 +91,7 @@ const Gallery = () => {
                 onClick={() => setSelectedCategory(category)}
                 className={`px-6 py-2 rounded-full font-medium transition-all duration-200 ${
                   selectedCategory === category
-                    ? 'bg-blue-600 text-white'
+                    ? 'bg-[#684a47] text-white'
                     : 'bg-gray-100 text-gray-700 hover:bg-gray-200'
                 }`}
               >
@@ -143,11 +143,11 @@ const Gallery = () => {
           
           <div className="grid grid-cols-1 lg:grid-cols-2 gap-8">
             <div className="bg-white rounded-xl shadow-lg overflow-hidden">
-              <div className="relative h-64 bg-gradient-to-br from-blue-500 to-blue-600 flex items-center justify-center">
+              <div className="relative h-64 bg-gradient-to-br from-[#684a47] to-[#5a3e3b] flex items-center justify-center">
                 <div className="text-center text-white">
                   <Play size={48} className="mx-auto mb-4" />
                   <h3 className="text-xl font-semibold mb-2">Hitesh Imperial Walkthrough</h3>
-                  <p className="text-blue-100">Coming Soon</p>
+                  <p className="text-orange-100">Coming Soon</p>
                 </div>
               </div>
               <div className="p-6">
@@ -157,11 +157,11 @@ const Gallery = () => {
             </div>
             
             <div className="bg-white rounded-xl shadow-lg overflow-hidden">
-              <div className="relative h-64 bg-gradient-to-br from-green-500 to-green-600 flex items-center justify-center">
+              <div className="relative h-64 bg-gradient-to-br from-orange-500 to-orange-600 flex items-center justify-center">
                 <div className="text-center text-white">
                   <Play size={48} className="mx-auto mb-4" />
                   <h3 className="text-xl font-semibold mb-2">Construction Progress</h3>
-                  <p className="text-green-100">Coming Soon</p>
+                  <p className="text-orange-100">Coming Soon</p>
                 </div>
               </div>
               <div className="p-6">
@@ -189,8 +189,8 @@ const Gallery = () => {
                 </div>
                 <h3 className="text-xl font-semibold text-gray-900 mb-2">Happy Family {i}</h3>
                 <p className="text-gray-600 mb-4">Proud residents of Sachani Group projects</p>
-                <div className="bg-blue-50 px-4 py-2 rounded-lg">
-                  <p className="text-blue-600 font-medium">Photo Coming Soon</p>
+                <div className="bg-orange-50 px-4 py-2 rounded-lg">
+                  <p className="text-[#684a47] font-medium">Photo Coming Soon</p>
                 </div>
               </div>
             ))}
@@ -199,17 +199,17 @@ const Gallery = () => {
       </section>
 
       {/* CTA Section */}
-      <section className="py-20 bg-gradient-to-r from-blue-600 to-blue-700">
+      <section className="py-20 bg-gradient-to-r from-[#684a47] to-[#5a3e3b]">
         <div className="max-w-4xl mx-auto text-center px-4 sm:px-6 lg:px-8">
           <h2 className="text-4xl font-bold text-white mb-6">
             Want to See More?
           </h2>
-          <p className="text-xl text-blue-100 mb-8">
+          <p className="text-xl text-orange-100 mb-8">
             Schedule a site visit to experience our projects in person and see the quality that sets us apart.
           </p>
           <a 
             href="tel:7300230028" 
-            className="bg-white text-blue-600 px-8 py-4 rounded-lg hover:bg-gray-100 transition-colors duration-200 font-semibold text-lg"
+            className="bg-white text-[#684a47] px-8 py-4 rounded-lg hover:bg-gray-100 transition-colors duration-200 font-semibold text-lg"
           >
             Schedule Site Visit
           </a>
