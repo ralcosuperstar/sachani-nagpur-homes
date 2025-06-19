@@ -1,3 +1,4 @@
+
 import React from 'react';
 import Navigation from '../components/Navigation';
 import Footer from '../components/Footer';
@@ -44,8 +45,8 @@ const Index = () => {
             <div className="relative animate-scale-in">
               <div className="bg-white rounded-2xl shadow-2xl p-8 border border-orange-100">
                 <img 
-                  src="https://images.unsplash.com/photo-1524230572899-a752b3835840?auto=format&fit=crop&w=800&q=80"
-                  alt="Modern Building"
+                  src="https://images.unsplash.com/photo-1486406146926-c627a92ad1ab?auto=format&fit=crop&w=800&q=80"
+                  alt="Modern Infrastructure Development"
                   className="w-full h-80 object-cover rounded-xl mb-6"
                 />
                 <div className="grid grid-cols-2 gap-4 text-center">
