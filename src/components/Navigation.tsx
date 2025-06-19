@@ -15,7 +15,7 @@ const Navigation = () => {
               <img 
                 src="/lovable-uploads/afa2fdd2-2c84-4c20-9b48-e7073ecdb910.png" 
                 alt="Sachani Group" 
-                className="h-10 w-auto"
+                className="h-12 w-auto"
               />
             </Link>
           </div>
