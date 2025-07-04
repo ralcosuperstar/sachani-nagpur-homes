@@ -3,7 +3,7 @@ import React from 'react';
 import Navigation from '../components/Navigation';
 import Footer from '../components/Footer';
 import ImageViewer from '../components/ImageViewer';
-import { MapPin, Home, Building, Calendar, CheckCircle, Phone } from 'lucide-react';
+import { MapPin, Home, Building, Calendar, CheckCircle, Phone, Download } from 'lucide-react';
 
 const Projects = () => {
   const [selectedImage, setSelectedImage] = React.useState<{src: string; alt: string} | null>(null);
@@ -140,13 +140,24 @@ const Projects = () => {
                   </div>
                 </div>
                 
-                <a 
-                  href="tel:+918265011135" 
-                  className="bg-[#684a47] text-white px-6 py-3 rounded-lg hover:bg-[#5a3e3b] transition-colors duration-200 inline-flex items-center gap-2 w-full sm:w-auto justify-center"
-                >
-                  <Phone size={16} />
-                  Contact for Details
-                </a>
+                <div className="flex flex-col sm:flex-row gap-4">
+                  <a 
+                    href="tel:+918265011135" 
+                    className="bg-[#684a47] text-white px-6 py-3 rounded-lg hover:bg-[#5a3e3b] transition-colors duration-200 inline-flex items-center gap-2 justify-center"
+                  >
+                    <Phone size={16} />
+                    Contact for Details
+                  </a>
+                  <a 
+                    href="https://drive.google.com/uc?export=download&id=19FZFsa2vNkKFgz78LCj76YB_XqcwHxjm"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    className="bg-orange-500 text-white px-6 py-3 rounded-lg hover:bg-orange-600 transition-colors duration-200 inline-flex items-center gap-2 justify-center"
+                  >
+                    <Download size={16} />
+                    Download Brochure
+                  </a>
+                </div>
               </div>
             </div>
             
@@ -284,13 +295,24 @@ const Projects = () => {
                   </div>
                 </div>
                 
-                <a 
-                  href="tel:+918265011135" 
-                  className="bg-[#684a47] text-white px-6 py-3 rounded-lg hover:bg-[#5a3e3b] transition-colors duration-200 inline-flex items-center gap-2 w-full sm:w-auto justify-center"
-                >
-                  <Phone size={16} />
-                  Enquire About Plots
-                </a>
+                <div className="flex flex-col sm:flex-row gap-4">
+                  <a 
+                    href="tel:+918265011135" 
+                    className="bg-[#684a47] text-white px-6 py-3 rounded-lg hover:bg-[#5a3e3b] transition-colors duration-200 inline-flex items-center gap-2 justify-center"
+                  >
+                    <Phone size={16} />
+                    Enquire About Plots
+                  </a>
+                  <a 
+                    href="https://drive.google.com/uc?export=download&id=1JM6XdotwIJbCyfGL4p7ttD6aBNlJXzIO"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    className="bg-orange-500 text-white px-6 py-3 rounded-lg hover:bg-orange-600 transition-colors duration-200 inline-flex items-center gap-2 justify-center"
+                  >
+                    <Download size={16} />
+                    Download Brochure
+                  </a>
+                </div>
               </div>
               
               <div>
