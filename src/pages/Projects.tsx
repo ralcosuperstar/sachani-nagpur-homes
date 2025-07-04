@@ -2,9 +2,11 @@
 import React from 'react';
 import Navigation from '../components/Navigation';
 import Footer from '../components/Footer';
+import ImageViewer from '../components/ImageViewer';
 import { MapPin, Home, Building, Calendar, CheckCircle, Phone } from 'lucide-react';
 
 const Projects = () => {
+  const [selectedImage, setSelectedImage] = React.useState<{src: string; alt: string} | null>(null);
   const featuredProject = {
     name: "Hitesh Imperial",
     rera: "P50500049710",
@@ -95,11 +97,11 @@ const Projects = () => {
           
           <div className="bg-white rounded-2xl shadow-2xl overflow-hidden">
             <div className="grid grid-cols-1 lg:grid-cols-2">
-              <div className="relative">
+              <div className="relative cursor-pointer" onClick={() => setSelectedImage({src: featuredProject.image, alt: featuredProject.name})}>
                 <img 
                   src={featuredProject.image}
                   alt={featuredProject.name}
-                  className="w-full h-64 sm:h-80 lg:h-full object-cover"
+                  className="w-full h-64 sm:h-80 lg:h-full object-cover hover:scale-105 transition-transform duration-300"
                 />
                 <div className="absolute top-4 left-4 bg-green-500 text-white px-3 py-1 rounded-full text-sm font-semibold">
                   RERA Approved
@@ -183,7 +185,8 @@ const Projects = () => {
                   <img 
                     src="/lovable-uploads/8dfdbd46-2fd0-4219-a1da-a0cfd2feabe1.png"
                     alt="2BHK Floor Plan"
-                    className="w-full h-48 sm:h-64 object-contain rounded-lg mb-4"
+                    className="w-full h-48 sm:h-64 object-contain rounded-lg mb-4 cursor-pointer hover:scale-105 transition-transform duration-300"
+                    onClick={() => setSelectedImage({src: "/lovable-uploads/8dfdbd46-2fd0-4219-a1da-a0cfd2feabe1.png", alt: "2BHK Floor Plan - Hitesh Imperial"})}
                   />
                   <h5 className="text-lg sm:text-xl font-bold text-gray-900 mb-2">2 BHK</h5>
                   <p className="text-gray-600 text-sm sm:text-base">Spacious 2-bedroom apartments with modern layout</p>
@@ -192,7 +195,8 @@ const Projects = () => {
                   <img 
                     src="/lovable-uploads/d8364319-d45e-41f0-baed-47489f08be14.png"
                     alt="3BHK Floor Plan"
-                    className="w-full h-48 sm:h-64 object-contain rounded-lg mb-4"
+                    className="w-full h-48 sm:h-64 object-contain rounded-lg mb-4 cursor-pointer hover:scale-105 transition-transform duration-300"
+                    onClick={() => setSelectedImage({src: "/lovable-uploads/d8364319-d45e-41f0-baed-47489f08be14.png", alt: "3BHK Floor Plan - Hitesh Imperial"})}
                   />
                   <h5 className="text-lg sm:text-xl font-bold text-gray-900 mb-2">3 BHK</h5>
                   <p className="text-gray-600 text-sm sm:text-base">Premium 3-bedroom apartments with enhanced features</p>
@@ -204,25 +208,28 @@ const Projects = () => {
             <div className="bg-white p-6 sm:p-8 lg:p-12 border-t">
               <h4 className="text-xl sm:text-2xl font-bold text-gray-900 mb-6 text-center">Project Gallery</h4>
               <div className="grid grid-cols-1 md:grid-cols-3 gap-4 sm:gap-6">
-                <div className="bg-gray-100 rounded-lg overflow-hidden">
+                <div className="bg-gray-100 rounded-lg overflow-hidden cursor-pointer hover:shadow-lg transition-all duration-300">
                   <img 
                     src="/lovable-uploads/de745a54-5b8f-4963-a84e-91345a3e3ee8.png"
                     alt="Hitesh Imperial - Front View"
-                    className="w-full h-48 object-cover"
+                    className="w-full h-48 object-cover hover:scale-110 transition-transform duration-300"
+                    onClick={() => setSelectedImage({src: "/lovable-uploads/de745a54-5b8f-4963-a84e-91345a3e3ee8.png", alt: "Hitesh Imperial - Front View"})}
                   />
                 </div>
-                <div className="bg-gray-100 rounded-lg overflow-hidden">
+                <div className="bg-gray-100 rounded-lg overflow-hidden cursor-pointer hover:shadow-lg transition-all duration-300">
                   <img 
                     src="/lovable-uploads/c3a1c9e6-65fe-4899-a476-477cb57e2da9.png"
                     alt="Hitesh Imperial - Evening View"
-                    className="w-full h-48 object-cover"
+                    className="w-full h-48 object-cover hover:scale-110 transition-transform duration-300"
+                    onClick={() => setSelectedImage({src: "/lovable-uploads/c3a1c9e6-65fe-4899-a476-477cb57e2da9.png", alt: "Hitesh Imperial - Evening View"})}
                   />
                 </div>
-                <div className="bg-gray-100 rounded-lg overflow-hidden">
+                <div className="bg-gray-100 rounded-lg overflow-hidden cursor-pointer hover:shadow-lg transition-all duration-300">
                   <img 
                     src="/lovable-uploads/1c47ad93-92ad-482e-ac79-0bbbbb4cd6ca.png"
                     alt="Hitesh Imperial - Side View"
-                    className="w-full h-48 object-cover"
+                    className="w-full h-48 object-cover hover:scale-110 transition-transform duration-300"
+                    onClick={() => setSelectedImage({src: "/lovable-uploads/1c47ad93-92ad-482e-ac79-0bbbbb4cd6ca.png", alt: "Hitesh Imperial - Side View"})}
                   />
                 </div>
               </div>
@@ -290,7 +297,8 @@ const Projects = () => {
                 <img 
                   src="/lovable-uploads/237eee8f-06b7-464a-9312-211a1243d18b.png"
                   alt="Shree Krishna Nagari Location Map"
-                  className="w-full h-64 sm:h-80 object-contain rounded-lg mb-4"
+                  className="w-full h-64 sm:h-80 object-contain rounded-lg mb-4 cursor-pointer hover:scale-105 transition-transform duration-300"
+                  onClick={() => setSelectedImage({src: "/lovable-uploads/237eee8f-06b7-464a-9312-211a1243d18b.png", alt: "Shree Krishna Nagari - Location Map with RERA Details"})}
                 />
                 <p className="text-gray-600 text-sm text-center">Location Map with RERA Details</p>
               </div>
@@ -302,7 +310,8 @@ const Projects = () => {
                 <img 
                   src="/lovable-uploads/917d38bc-cd1a-4655-bcee-71769eb79668.png"
                   alt="Shree Krishna Nagari Plot Layout"
-                  className="w-full h-64 sm:h-96 object-contain rounded-lg"
+                  className="w-full h-64 sm:h-96 object-contain rounded-lg cursor-pointer hover:scale-105 transition-transform duration-300"
+                  onClick={() => setSelectedImage({src: "/lovable-uploads/917d38bc-cd1a-4655-bcee-71769eb79668.png", alt: "Shree Krishna Nagari - Complete Plot Layout Plan"})}
                 />
               </div>
               <p className="text-gray-600 text-sm sm:text-base text-center mt-4">
@@ -433,6 +442,14 @@ const Projects = () => {
       </section>
 
       <Footer />
+      
+      {/* Image Viewer */}
+      <ImageViewer
+        src={selectedImage?.src || ''}
+        alt={selectedImage?.alt || ''}
+        isOpen={!!selectedImage}
+        onClose={() => setSelectedImage(null)}
+      />
     </div>
   );
 };

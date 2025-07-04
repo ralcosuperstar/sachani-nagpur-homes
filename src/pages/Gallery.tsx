@@ -2,6 +2,7 @@
 import React from 'react';
 import Navigation from '../components/Navigation';
 import Footer from '../components/Footer';
+import ImageViewer from '../components/ImageViewer';
 import { Camera, Play, Image as ImageIcon } from 'lucide-react';
 
 const Gallery = () => {
@@ -59,6 +60,7 @@ const Gallery = () => {
   ];
 
   const [selectedCategory, setSelectedCategory] = React.useState("All");
+  const [selectedImage, setSelectedImage] = React.useState<{src: string; alt: string} | null>(null);
 
   const filteredImages = selectedCategory === "All" 
     ? galleryImages 
@@ -114,6 +116,7 @@ const Gallery = () => {
               <div 
                 key={image.id} 
                 className="group relative overflow-hidden rounded-xl shadow-lg hover:shadow-2xl transition-all duration-300 cursor-pointer"
+                onClick={() => setSelectedImage({src: image.src, alt: image.alt})}
               >
                 <img 
                   src={image.src}
@@ -221,6 +224,14 @@ const Gallery = () => {
       </section>
 
       <Footer />
+      
+      {/* Image Viewer */}
+      <ImageViewer
+        src={selectedImage?.src || ''}
+        alt={selectedImage?.alt || ''}
+        isOpen={!!selectedImage}
+        onClose={() => setSelectedImage(null)}
+      />
     </div>
   );
 };
