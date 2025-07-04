@@ -93,7 +93,7 @@ const About = () => {
                 <h3 className="text-3xl font-bold text-gray-900">Mission</h3>
               </div>
               <p className="text-lg text-gray-600 leading-relaxed">
-                To deliver top-quality, affordable, and sustainable real estate solutions that transform 
+                To deliver top-quality and sustainable real estate solutions that transform 
                 the way people live, work, and invest.
               </p>
             </div>

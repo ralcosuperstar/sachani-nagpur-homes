@@ -30,11 +30,12 @@ const Projects = () => {
       "Society office",
       "Senior citizens' seating area",
       "CCTV surveillance in parking",
-      "2 automatic lifts with ARD back-up",
+      "2 automatic lifts with ARD systems",
       "Fire extinguishers",
       "Rainwater harvesting",
       "Solar power for common areas",
-      "B-secure laminated main doors"
+      "B-secure laminated main doors",
+      "Godrej Video Door Phone"
     ]
   };
 
@@ -138,7 +139,7 @@ const Projects = () => {
                 </div>
                 
                 <a 
-                  href="tel:7300230028" 
+                  href="tel:+918265011135" 
                   className="bg-[#684a47] text-white px-6 py-3 rounded-lg hover:bg-[#5a3e3b] transition-colors duration-200 inline-flex items-center gap-2 w-full sm:w-auto justify-center"
                 >
                   <Phone size={16} />
@@ -265,7 +266,7 @@ const Projects = () => {
                 </div>
                 <p className="text-gray-600 mb-6">{project.type}</p>
                 <a 
-                  href="tel:7300230028" 
+                  href="tel:+918265011135" 
                   className="bg-[#684a47] text-white px-6 py-3 rounded-lg hover:bg-[#5a3e3b] transition-colors duration-200 inline-flex items-center gap-2 w-full sm:w-auto justify-center"
                 >
                   <Phone size={16} />
@@ -287,7 +288,7 @@ const Projects = () => {
             Schedule a site visit or get detailed information about our ongoing and upcoming projects.
           </p>
           <a 
-            href="tel:7300230028" 
+            href="tel:+918265011135" 
             className="bg-white text-[#684a47] px-6 sm:px-8 py-3 sm:py-4 rounded-lg hover:bg-gray-100 transition-colors duration-200 font-semibold text-base sm:text-lg inline-flex items-center gap-2"
           >
             <Phone size={20} />

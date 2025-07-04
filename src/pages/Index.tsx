@@ -27,7 +27,7 @@ const Index = () => {
               </p>
               <div className="flex flex-col sm:flex-row gap-4">
                 <a 
-                  href="tel:7300230028" 
+                  href="tel:+918265011135" 
                   className="bg-[#684a47] text-white px-8 py-4 rounded-lg hover:bg-[#5a3e3b] transition-all duration-300 flex items-center justify-center gap-3 text-lg font-semibold hover:scale-105"
                 >
                   <Phone size={20} />
@@ -132,51 +132,95 @@ const Index = () => {
         </div>
       </section>
 
-      {/* Featured Project Section */}
+      {/* Featured Projects Section */}
       <section className="py-20">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="text-center mb-16">
-            <h2 className="text-4xl font-bold text-gray-900 mb-4">Featured Project</h2>
-            <p className="text-xl text-gray-600">Discover our latest premium development</p>
+            <h2 className="text-4xl font-bold text-gray-900 mb-4">Featured Projects</h2>
+            <p className="text-xl text-gray-600">Discover our premium developments</p>
           </div>
           
-          <div className="bg-white rounded-2xl shadow-2xl overflow-hidden">
-            <div className="grid grid-cols-1 lg:grid-cols-2">
-              <div className="p-12">
-                <div className="bg-orange-100 text-[#684a47] px-3 py-1 rounded-full text-sm font-semibold mb-4 inline-block">
-                  RERA No. P50500049710
-                </div>
-                <h3 className="text-3xl font-bold text-gray-900 mb-4">Hitesh Imperial</h3>
-                <p className="text-gray-600 mb-6">
-                  Premium 2 BHK & 3 BHK flats in Om Nagar, Jaripatka, Nagpur. 
-                  Experience modern living with world-class amenities.
-                </p>
-                
-                <div className="grid grid-cols-2 gap-4 mb-8">
-                  <div>
-                    <h4 className="font-semibold text-gray-900">Configuration</h4>
-                    <p className="text-gray-600">2 BHK & 3 BHK</p>
+          <div className="space-y-12">
+            {/* Hitesh Imperial */}
+            <div className="bg-white rounded-2xl shadow-2xl overflow-hidden">
+              <div className="grid grid-cols-1 lg:grid-cols-2">
+                <div className="p-12">
+                  <div className="bg-orange-100 text-[#684a47] px-3 py-1 rounded-full text-sm font-semibold mb-4 inline-block">
+                    RERA No. P50500049710
                   </div>
-                  <div>
-                    <h4 className="font-semibold text-gray-900">Total Units</h4>
-                    <p className="text-gray-600">49 Premium Flats</p>
+                  <h3 className="text-3xl font-bold text-gray-900 mb-4">Hitesh Imperial</h3>
+                  <p className="text-gray-600 mb-6">
+                    Premium 2 BHK & 3 BHK flats in Om Nagar, Jaripatka, Nagpur. 
+                    Experience modern living with thoughtfully designed spaces.
+                  </p>
+                  
+                  <div className="grid grid-cols-2 gap-4 mb-8">
+                    <div>
+                      <h4 className="font-semibold text-gray-900">Configuration</h4>
+                      <p className="text-gray-600">2 BHK & 3 BHK</p>
+                    </div>
+                    <div>
+                      <h4 className="font-semibold text-gray-900">Total Units</h4>
+                      <p className="text-gray-600">49 Premium Flats</p>
+                    </div>
                   </div>
+                  
+                  <Link 
+                    to="/projects" 
+                    className="bg-[#684a47] text-white px-6 py-3 rounded-lg hover:bg-[#5a3e3b] transition-colors duration-200 inline-block"
+                  >
+                    View Details
+                  </Link>
                 </div>
                 
-                <Link 
-                  to="/projects" 
-                  className="bg-[#684a47] text-white px-6 py-3 rounded-lg hover:bg-[#5a3e3b] transition-colors duration-200 inline-block"
-                >
-                  View Details
-                </Link>
+                <div className="relative h-96 lg:h-auto">
+                  <img 
+                    src="https://images.unsplash.com/photo-1487058792275-0ad4aaf24ca7?auto=format&fit=crop&w=800&q=80"
+                    alt="Hitesh Imperial"
+                    className="w-full h-full object-cover"
+                  />
+                </div>
               </div>
-              
-              <div className="relative h-96 lg:h-auto">
-                <img 
-                  src="https://images.unsplash.com/photo-1487058792275-0ad4aaf24ca7?auto=format&fit=crop&w=800&q=80"
-                  alt="Hitesh Imperial"
-                  className="w-full h-full object-cover"
-                />
+            </div>
+
+            {/* Godhni Layout (Shree Krishna Nagari) */}
+            <div className="bg-white rounded-2xl shadow-2xl overflow-hidden">
+              <div className="grid grid-cols-1 lg:grid-cols-2">
+                <div className="relative h-96 lg:h-auto lg:order-first">
+                  <img 
+                    src="https://images.unsplash.com/photo-1500648767791-00dcc994a43e?auto=format&fit=crop&w=800&q=80"
+                    alt="Godhni Layout - Shree Krishna Nagari"
+                    className="w-full h-full object-cover"
+                  />
+                </div>
+                <div className="p-12">
+                  <div className="bg-green-100 text-green-700 px-3 py-1 rounded-full text-sm font-semibold mb-4 inline-block">
+                    Layout Project
+                  </div>
+                  <h3 className="text-3xl font-bold text-gray-900 mb-4">Godhni Layout (Shree Krishna Nagari)</h3>
+                  <p className="text-gray-600 mb-6">
+                    Premium residential plots in a strategically planned layout with excellent connectivity 
+                    and modern infrastructure facilities.
+                  </p>
+                  
+                  <div className="grid grid-cols-2 gap-4 mb-8">
+                    <div>
+                      <h4 className="font-semibold text-gray-900">Project Type</h4>
+                      <p className="text-gray-600">Residential Layout</p>
+                    </div>
+                    <div>
+                      <h4 className="font-semibold text-gray-900">Status</h4>
+                      <p className="text-gray-600">Ongoing</p>
+                    </div>
+                  </div>
+                  
+                  <Link 
+                    to="/projects" 
+                    className="bg-[#684a47] text-white px-6 py-3 rounded-lg hover:bg-[#5a3e3b] transition-colors duration-200 inline-block"
+                  >
+                    View Details
+                  </Link>
+                </div>
               </div>
             </div>
           </div>
@@ -194,7 +238,7 @@ const Index = () => {
           </p>
           <div className="flex flex-col sm:flex-row gap-4 justify-center">
             <a 
-              href="tel:7300230028" 
+              href="tel:+918265011135" 
               className="bg-white text-[#684a47] px-8 py-4 rounded-lg hover:bg-gray-100 transition-colors duration-200 font-semibold text-lg"
             >
               Schedule Site Visit

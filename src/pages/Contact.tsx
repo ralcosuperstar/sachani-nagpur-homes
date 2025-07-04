@@ -73,12 +73,20 @@ const Contact = () => {
                   </div>
                   <div>
                     <h3 className="text-lg font-semibold text-gray-900 mb-2">Call Us</h3>
-                    <a 
-                      href="tel:7300230028" 
-                      className="text-gray-600 hover:text-green-600 transition-colors text-lg"
-                    >
-                      7300230028
-                    </a>
+                    <div className="space-y-1">
+                      <a 
+                        href="tel:+918262011135" 
+                        className="text-gray-600 hover:text-green-600 transition-colors text-lg block"
+                      >
+                        +91 8262011135
+                      </a>
+                      <a 
+                        href="tel:+918265011135" 
+                        className="text-gray-600 hover:text-green-600 transition-colors text-lg block"
+                      >
+                        +91 8265011135
+                      </a>
+                    </div>
                     <p className="text-gray-500 text-sm mt-1">Available 24/7 for your queries</p>
                   </div>
                 </div>
@@ -90,10 +98,10 @@ const Contact = () => {
                   <div>
                     <h3 className="text-lg font-semibold text-gray-900 mb-2">Email Us</h3>
                     <a 
-                      href="mailto:abcxyz@gmail.com" 
+                      href="mailto:sachanigroup@gmail.com" 
                       className="text-gray-600 hover:text-purple-600 transition-colors break-all"
                     >
-                      abcxyz@gmail.com
+                      sachanigroup@gmail.com
                     </a>
                     <p className="text-gray-500 text-sm mt-1">We'll respond within 24 hours</p>
                   </div>
@@ -120,11 +128,11 @@ const Contact = () => {
                   Call us directly for immediate support and quick responses to your queries.
                 </p>
                 <a 
-                  href="tel:7300230028" 
+                  href="tel:+918265011135" 
                   className="bg-[#684a47] text-white px-6 py-3 rounded-lg hover:bg-[#5a3e3b] transition-colors duration-200 inline-flex items-center gap-2 font-semibold w-full sm:w-auto justify-center"
                 >
                   <Phone size={20} />
-                  Call Now: 7300230028
+                  Call Now: +91 8265011135
                 </a>
               </div>
             </div>

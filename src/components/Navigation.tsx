@@ -20,7 +20,7 @@ const Navigation = () => {
             <Link to="/gallery" className="text-gray-700 hover:text-[#684a47] transition-colors duration-200">Gallery</Link>
             <Link to="/blogs" className="text-gray-700 hover:text-[#684a47] transition-colors duration-200">Blogs</Link>
             <Link to="/contact" className="text-gray-700 hover:text-[#684a47] transition-colors duration-200">Contact</Link>
-            <a href="tel:7300230028" className="bg-[#684a47] text-white px-4 py-2 rounded-lg hover:bg-[#5a3e3b] transition-colors duration-200 flex items-center gap-2">
+            <a href="tel:+918265011135" className="bg-[#684a47] text-white px-4 py-2 rounded-lg hover:bg-[#5a3e3b] transition-colors duration-200 flex items-center gap-2">
               <Phone size={16} />
               Call Now
             </a>
@@ -43,7 +43,7 @@ const Navigation = () => {
               <Link to="/gallery" className="block px-3 py-2 text-gray-700 hover:text-[#684a47]">Gallery</Link>
               <Link to="/blogs" className="block px-3 py-2 text-gray-700 hover:text-[#684a47]">Blogs</Link>
               <Link to="/contact" className="block px-3 py-2 text-gray-700 hover:text-[#684a47]">Contact</Link>
-              <a href="tel:7300230028" className="block px-3 py-2 bg-[#684a47] text-white rounded-lg text-center">
+              <a href="tel:+918265011135" className="block px-3 py-2 bg-[#684a47] text-white rounded-lg text-center">
                 Call Now
               </a>
             </div>
