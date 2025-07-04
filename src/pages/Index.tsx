@@ -44,11 +44,11 @@ const Index = () => {
             
             <div className="relative animate-scale-in">
               <div className="bg-white rounded-2xl shadow-2xl p-8 border border-orange-100">
-                <img 
-                  src="https://images.unsplash.com/photo-1486406146926-c627a92ad1ab?auto=format&fit=crop&w=800&q=80"
-                  alt="Modern Infrastructure Development"
-                  className="w-full h-80 object-cover rounded-xl mb-6"
-                />
+                 <img 
+                   src="/lovable-uploads/de745a54-5b8f-4963-a84e-91345a3e3ee8.png"
+                   alt="Modern Infrastructure Development"
+                   className="w-full h-80 object-cover rounded-xl mb-6"
+                 />
                 <div className="grid grid-cols-2 gap-4 text-center">
                   <div className="bg-orange-50 p-4 rounded-lg">
                     <h3 className="text-2xl font-bold text-[#684a47]">25+</h3>
@@ -175,7 +175,7 @@ const Index = () => {
                 
                 <div className="relative h-96 lg:h-auto">
                   <img 
-                    src="https://images.unsplash.com/photo-1487058792275-0ad4aaf24ca7?auto=format&fit=crop&w=800&q=80"
+                    src="/lovable-uploads/de745a54-5b8f-4963-a84e-91345a3e3ee8.png"
                     alt="Hitesh Imperial"
                     className="w-full h-full object-cover"
                   />
@@ -188,7 +188,7 @@ const Index = () => {
               <div className="grid grid-cols-1 lg:grid-cols-2">
                 <div className="relative h-96 lg:h-auto lg:order-first">
                   <img 
-                    src="https://images.unsplash.com/photo-1500648767791-00dcc994a43e?auto=format&fit=crop&w=800&q=80"
+                    src="/lovable-uploads/237eee8f-06b7-464a-9312-211a1243d18b.png"
                     alt="Godhni Layout - Shree Krishna Nagari"
                     className="w-full h-full object-cover"
                   />

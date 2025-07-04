@@ -8,50 +8,54 @@ const Gallery = () => {
   const galleryImages = [
     {
       id: 1,
-      src: "https://images.unsplash.com/photo-1487058792275-0ad4aaf24ca7?auto=format&fit=crop&w=800&q=80",
-      alt: "Modern building exterior",
+      src: "/lovable-uploads/de745a54-5b8f-4963-a84e-91345a3e3ee8.png",
+      alt: "Hitesh Imperial - Exterior View",
       category: "Exterior Views"
     },
     {
       id: 2,
-      src: "https://images.unsplash.com/photo-1524230572899-a752b3835840?auto=format&fit=crop&w=800&q=80",
-      alt: "Apartment complex",
-      category: "Completed Projects"
+      src: "/lovable-uploads/c3a1c9e6-65fe-4899-a476-477cb57e2da9.png",
+      alt: "Hitesh Imperial - Evening View",
+      category: "Exterior Views"
     },
     {
       id: 3,
-      src: "https://images.unsplash.com/photo-1486406146926-c627a92ad1ab?auto=format&fit=crop&w=800&q=80",
-      alt: "Construction site",
-      category: "Under Construction"
+      src: "/lovable-uploads/1c47ad93-92ad-482e-ac79-0bbbbb4cd6ca.png",
+      alt: "Hitesh Imperial - Side View",
+      category: "Exterior Views"
     },
     {
       id: 4,
-      src: "https://images.unsplash.com/photo-1506744038136-46273834b3fb?auto=format&fit=crop&w=800&q=80",
-      alt: "Residential area",
-      category: "Neighborhoods"
+      src: "/lovable-uploads/8dfdbd46-2fd0-4219-a1da-a0cfd2feabe1.png",
+      alt: "2 BHK Floor Plan",
+      category: "Floor Plans"
     },
     {
       id: 5,
-      src: "https://images.unsplash.com/photo-1500673922987-e212871fec22?auto=format&fit=crop&w=800&q=80",
-      alt: "Evening view",
-      category: "Ambiance"
+      src: "/lovable-uploads/d8364319-d45e-41f0-baed-47489f08be14.png",
+      alt: "3 BHK Floor Plan",
+      category: "Floor Plans"
     },
     {
       id: 6,
-      src: "https://images.unsplash.com/photo-1488590528505-98d2b5aba04b?auto=format&fit=crop&w=800&q=80",
-      alt: "Modern interior",
-      category: "Interior Design"
+      src: "/lovable-uploads/237eee8f-06b7-464a-9312-211a1243d18b.png",
+      alt: "Shree Krishna Nagari - Location Map",
+      category: "Location Maps"
+    },
+    {
+      id: 7,
+      src: "/lovable-uploads/917d38bc-cd1a-4655-bcee-71769eb79668.png",
+      alt: "Shree Krishna Nagari - Plot Layout",
+      category: "Layout Plans"
     }
   ];
 
   const categories = [
     "All",
     "Exterior Views",
-    "Completed Projects",
-    "Under Construction",
-    "Neighborhoods",
-    "Ambiance",
-    "Interior Design"
+    "Floor Plans",
+    "Location Maps",
+    "Layout Plans"
   ];
 
   const [selectedCategory, setSelectedCategory] = React.useState("All");
