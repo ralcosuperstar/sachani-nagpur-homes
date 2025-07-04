@@ -142,11 +142,13 @@ const About = () => {
           <div className="grid grid-cols-1 lg:grid-cols-3 gap-8">
             {founders.map((founder, index) => (
               <div key={index} className="bg-white rounded-2xl shadow-lg overflow-hidden hover:shadow-xl transition-all duration-300">
-                <img 
-                  src={founder.image}
-                  alt={founder.name}
-                  className="w-full h-64 object-cover"
-                />
+                <div className="h-80 overflow-hidden">
+                  <img 
+                    src={founder.image}
+                    alt={founder.name}
+                    className="w-full h-full object-cover object-center"
+                  />
+                </div>
                 <div className="p-8">
                   <h3 className="text-2xl font-bold text-gray-900 mb-2">{founder.name}</h3>
                   <p className="text-[#684a47] font-semibold mb-2">{founder.role}</p>
