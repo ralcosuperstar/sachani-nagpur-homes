@@ -11,21 +11,21 @@ const About = () => {
       role: "Founder",
       experience: "25+",
       description: "With over 25 years of experience in the real estate and construction industry, Gourishankar Sachani's deep expertise, commitment to quality, and dedication have been instrumental in shaping the company's legacy across Nagpur. Under his guidance, Sachani Group has delivered numerous residential and commercial projects marked by integrity and excellence.",
-      image: "https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?auto=format&fit=crop&w=400&q=80"
+      image: "/lovable-uploads/d366b6e0-345c-4ca7-b49f-ad1c8ccb6873.png"
     },
     {
       name: "Akash Sachani",
       role: "Director",
       education: "Civil Engineering, MBA",
       description: "Akash Sachani, a Civil Engineering graduate with an MBA from NMIMS Mumbai, brings a unique blend of technical expertise and strategic business insight to Sachani Group. He is focused on expanding the company's legacy through innovation and quality real estate in Nagpur.",
-      image: "https://images.unsplash.com/photo-1472099645785-5658abf4ff4e?auto=format&fit=crop&w=400&q=80"
+      image: "/lovable-uploads/d95e7689-72f4-4972-a70f-9ab14f76c111.png"
     },
     {
       name: "Sahil Sachani",
       role: "Director",
       education: "CA (Final Stage)",
       description: "Sahil Sachani currently in the final stage of his Chartered Accountancy (CA) qualification, brings a dynamic vision to Sachani Group, focusing on diversifying the business through new collaborations and ideas, helping to expand the group's horizons beyond traditional real estate.",
-      image: "https://images.unsplash.com/photo-1519085360753-af0119f7cbe7?auto=format&fit=crop&w=400&q=80"
+      image: "/lovable-uploads/8ac538f2-d236-4b80-9ed8-487c5370f5e6.png"
     }
   ];
 
@@ -74,8 +74,8 @@ const About = () => {
             </div>
             <div className="relative">
               <img 
-                src="https://images.unsplash.com/photo-1486406146926-c627a92ad1ab?auto=format&fit=crop&w=800&q=80"
-                alt="Modern Construction"
+                src="/lovable-uploads/c3a1c9e6-65fe-4899-a476-477cb57e2da9.png"
+                alt="Hitesh Imperial - Modern Construction"
                 className="w-full h-96 object-cover rounded-2xl shadow-2xl"
               />
             </div>
