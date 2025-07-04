@@ -46,8 +46,8 @@ const Footer = () => {
           <div>
             <h4 className="text-lg font-semibold mb-4">Contact Info</h4>
             <div className="space-y-3">
-              <div className="flex items-start gap-3">
-                <MapPin size={16} className="mt-1 text-[#684a47]" />
+              <div className="flex items-center gap-3">
+                <MapPin size={16} className="text-[#684a47] flex-shrink-0" />
                 <p className="text-gray-300 text-sm">
                   Shop no.18 & 19, Upper Lobby floor, J.B. Wing, NMC Complex, Mangalwari Bazar road, Sadar, Nagpur- 440001
                 </p>
