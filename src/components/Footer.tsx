@@ -74,9 +74,14 @@ const Footer = () => {
         </div>
         
         <div className="border-t border-gray-800 mt-8 pt-8 flex flex-col md:flex-row justify-between items-center">
-          <p className="text-gray-300 text-sm">
-            © 2024 Sachani Group. All rights reserved.
-          </p>
+          <div className="flex flex-col items-center md:items-start gap-2">
+            <p className="text-gray-300 text-sm">
+              © {new Date().getFullYear()} Sachani Group. All rights reserved.
+            </p>
+            <p className="text-gray-400 text-xs">
+              Site Managed by <a href="https://www.abhivirasolutions.com/" target="_blank" rel="noopener noreferrer" className="text-[#684a47] hover:text-[#5a3e3b] transition-colors">Abhivira Business Solutions LLP</a>
+            </p>
+          </div>
           <div className="flex space-x-6 mt-4 md:mt-0">
             <Link to="/privacy" className="text-gray-300 hover:text-white text-sm">Privacy Policy</Link>
             <Link to="/disclaimer" className="text-gray-300 hover:text-white text-sm">Disclaimer</Link>
